@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="pt-br">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="content-language" content="pt-BR,pt" />
+    <meta name="ROBOTS" content="none" />
+
+    <title>@ViewBag.Title - Modelo ASP.NET Application</title>
+
+    <!-- Variaveis de Script Global -->
+    <script type="text/javascript">
+        var content = '@Url.Content("~/")';
+    </script>
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+
+    @{
+        var port = ViewContext.HttpContext.Request.Url.Port != 80 ? (":" + ViewContext.HttpContext.Request.Url.Port) : String.Empty;
+        var url = String.Format("{0}://{1}{2}{3}", ViewContext.HttpContext.Request.Url.Host.Equals("localhost") ? "http" : "https", ViewContext.HttpContext.Request.Url.Host, port, VirtualPathUtility.ToAbsolute("~/"));
+    }
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/layoutTemplate")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="shortcut icon" href="~/favicon.ico" />
+
+</head>
+
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo" style="background:#024135">
+
+    @RenderPage("_LayoutHeader.cshtml")
+
+    <div class="page-container" style="min-height: 500px; background:rgb(237, 239, 241); ">
+
+        @RenderBody()
+
+    </div>
+
+    @RenderPage("_LayoutFooter.cshtml")
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/blockUI")
+    @RenderSection("scripts", required: false)
+
+    <!-- Script BlockUi -->
+    <script type="text/javascript">
+            var content = '@url';
+
+            /* BlockUi Loader */
+            var doBlock = false;
+
+            function ajaxBlockUI() {
+                doBlock = true;
+                setTimeout('BlockUI()', 250);
+            }
+
+            function BlockUI() {
+                if (doBlock == true) {
+                    jQuery.blockUI();
+                }
+            }
+
+            function ajaxUnblockUI() {
+                doBlock = false;
+                jQuery.unblockUI();
+            }
+
+            jQuery(document).ready(function () {
+                jQuery.blockUI.defaults.message = "<br/> <img alt='X' style='width:20%' src='@Url.Content("~/Content/Imagem/loading.gif")' /><br/><h6>Carregando informações</h6><br/><h4>Aguarde...</h4>";
+                jQuery.blockUI.defaults.css.cursor = "default";
+                jQuery.blockUI.defaults.overlayCSS.cursor = "default";
+
+            }).ajaxStart(ajaxBlockUI).ajaxStop(ajaxUnblockUI);
+            /* FIM BlockUi */
+    </script>
+</body>

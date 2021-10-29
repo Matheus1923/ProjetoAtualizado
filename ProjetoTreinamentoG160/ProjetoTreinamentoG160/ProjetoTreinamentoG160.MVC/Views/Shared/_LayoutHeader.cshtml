@@ -1,0 +1,96 @@
+﻿<nav class="navbar navbar-default" style="background: #024135; margin-bottom:0px; border:none">
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand" style="padding: 5px 15px" id="navBarHomeButton">
+                <span>
+                    <a href=""> <img src="~/Content/Imagem/sefaz-ms.png" alt="SEFAZ" /></a>
+                </span>
+
+                <span>
+                    <a href="" style="margin-left: 10px; color: white"> Application Name </a>
+                </span>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" rule="button" aria-haspopup="true" aria-expanded="false" style="color:white">Solicitações <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem" href="/Employees"> Employees (002000000000)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" rule="button" aria-haspopup="true" aria-expanded="false" style="color:white">Serviços <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem" href="/dev-sap/ServicosDisponiveis"> Serviços Disponíveis (001000000000)</a>
+                        </li>
+                    </ul>
+                </li>
+               
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" onmouseover="this.style.color = 'black'" onmouseout="this.style.color = 'white'">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" rule="button" aria-haspopup="true"
+                       aria-expanded="false" style="color:white" onmouseover="this.style.color = 'lightgray'" onmouseout="this.style.color='white'">
+                        <i class="glyphicon glyphicon-user" aria-hidden="true" style="align-content:center"></i>
+                        <span class="username username-hide-on-mobile">&nbsp;&nbsp;Tony Stark</span>
+                    </a>
+                    <ul class="dropdown dropdown-menu-v2" style="width:auto">
+                        <li>
+                            <a title="Usuario">
+                                <i class="fa fa-user-circle"></i> User Name
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Matrícula">
+                                <i class="fa fa-tag"></i> 000.000.000
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Grupo">
+                                <i class="fa fa-bell"></i> ESTAGIÁRIO
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Unidade">
+                                <i class="fa fa-map"></i> COTIN - COORDENADORIA ESPECIAL DE TECNOLOGIA DA INFORMAÇÃO
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="" onclick="Close()" title="Sair">
+                                <i class="fa fa-sign-out"></i> Sair
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <input type="hidden" id="success"
+               value="@TempData["success"]" />
+        <input type="hidden" id="info"
+               value="@TempData["info"]" />
+        <input type="hidden" id="warning"
+               value="@TempData["warning"]" />
+        <input type="hidden" id="error"
+               value="@TempData["error"]" />
+
+    </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,54 @@
+﻿Fazer update usando package Manager Console
+Update-Package -Reinstall
+
+Localizar References e adicionar o Modelo ModelData  ou o Modelo DataApplicator
+
+Apos Adicionar as referencias
+
+Localizar o arquivo web.config e adicionar a Tag
+
+Exemplo:
+  <connectionStrings>
+    <add name="NorthwindEntities" connectionString="metadata=res://*/Logic.Northwind.Model.Northwind.csdl|res://*/Logic.Northwind.Model.Northwind.ssdl|res://*/Logic.Northwind.Model.Northwind.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=AAMSGI67760\SQL2008;initial catalog=Northwind;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+
+
+Apos Adicionar a Tag no web.config fechar o projeto e abrir novamente
+
+Apos abrir o Projeto 
+
+Localizar a Pasta Controllers no projeto API
+
+e com Lado Direito do Mouse selecione a opção ADD NEW SCAFFOLDED ITEM 
+
+Opção:
+
+Web Api
+
+Exemplo:
+
+
+Template:
+Controller with read/write action and views, using Entity Framework
+
+Model class:
+Category (Modelo.NovoTeste.ModelData.Logic.Northwind.Model)
+
+Data context class:
+NorthwindEntities (Modelo.NovoTeste.ModelData.Logic.Northwind.Model)
+
+Controller name:
+CategoryController  obs: sempre usar o nome da classe gerada no ModelData [ Category+Controller ]
+
+
+click botão[ADD] 
+
+
+---------------------------------------------------------------
+Abrir a Controller gerada
+
+Exemplo:
+CategoryController
+
+
+Observação: Caso não consiga fazer os exemplos - Solução Rio de Janeiro vaga pra policial mesmo heheheheheehehehe

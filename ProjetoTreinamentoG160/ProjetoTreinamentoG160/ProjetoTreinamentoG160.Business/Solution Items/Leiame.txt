@@ -1,0 +1,71 @@
+﻿Modelo Business
+
+Caso o NuGet não Restaurar as Referências 
+Localizar References 
+
+==> SGI.Common.Architecture
+==> SGI.Common.BusinessSimple
+
+e adicionar o Modelo ModelData
+
+Localizar o diretorio [ CodeTemplates ]
+selecione o arquivo BusinessCustom.tt
+e com Lado Direito do Mouse selecione a opção RUN CUSTOM TOOL
+
+apos rodar o arquivo BusinessCustom.tt
+
+Solution Explorer - selecione show all files
+
+selecione a Pasta Northwind gerada
+e com lado direito do mouse Seleciona a Opção include in project
+
+
+Caso queira usar o modelo baseado Design By Contract
+
+Criar a class e adicionar o Modelo 
+    [RegraAtiva(true)]
+    public class RV_Modelo_01Business : GenericRuleEF<NorthwindEntities, Modelo>
+    {
+        public RV_Modelo_01Business(NorthwindEntities contexto, Modelo instancia)
+            : base(contexto, instancia)
+        { }
+
+        /// <summary>
+        /// Executa a validação da regra
+        /// </summary>
+        public override bool Consistir()
+        {
+            try
+            {
+                // Todo Regra
+
+                if (instancia??)
+                {
+                    Mensagens.Add(new RulesMessage(000, "RV_Modelo_01Business", "VALOR INVALIDO!"));
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+    }
+
+-----------------------------------------------------------------------------
+adicionar a regra no controller - Obs Local onde for chamar a Business
+
+                var validarRegra = new RV_Modelo_01Business(db, modelo);
+                if (!validarRegra.Consistir())
+                {
+                    
+                    foreach (var item in validarRegra.Mensagens)
+                    {
+                     /// todo;
+                    }
+                    
+                }
+
+Observação: Caso não consiga fazer os exemplos - Solução Rio de Janeiro vaga pra policial mesmo heheheheheehehehe

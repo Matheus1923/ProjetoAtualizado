@@ -1,0 +1,25 @@
+﻿Modelo DataApplicator
+
+Caso o NuGet não Restaurar as Referências 
+Localizar References 
+
+==> SGI.Common.Architecture
+==> SGI.Common.DataApplicator
+
+e adicionar o Modelo ModelData
+
+
+Localizar o diretorio [ CodeTemplates ]
+selecione o arquivo DataApplicatorCustom.tt
+e com Lado Direito do Mouse selecione a opção RUN CUSTOM TOOL
+
+apos rodar o arquivo DataApplicatorCustom.tt
+
+Solution Explorer - selecione show all files
+
+selecione a Pasta Northwind gerada
+e com lado direito do mouse Seleciona a Opção include in project
+
+
+
+Observação: Caso não consiga fazer os exemplos - Solução Rio de Janeiro vaga pra policial mesmo heheheheheehehehe

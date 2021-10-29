@@ -1,0 +1,189 @@
+/* Cubic Bezier Transition */
+/***
+Error Pages
+***/
+body {
+  font-family: "Roboto", sans-serif; }
+
+p {
+  font-size: 18px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit; }
+
+.title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 34px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+
+/* 404 - Página Não Encontrada */
+.page-404 {
+  text-align: center; }
+
+  .page-404 .details .title {
+    color: #dedede; }
+
+  .page-404 .details p {
+      color: #dedede; }
+
+  .page-404 .number {
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 200px;
+    color: #dedede;
+    opacity: .2;
+    line-height: .9;
+    letter-spacing: -8px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.7); }
+
+  .page-404 .text {
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 150px;
+    color: #dedede;
+    opacity: .2;
+    line-height: .9;
+    letter-spacing: -8px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.7); }
+
+  .page-404 .details {
+    padding-top: 0px;
+    padding-left: 25px;  
+    color: #5c6873;
+    text-align: center;
+    display: inline-block; }
+
+.page-404-full-page {  
+  padding: 23px;
+  background: #009688;
+  overflow-x: hidden; }
+
+  .page-404-full-page .details input {
+    background-color: #ffffff; }
+
+  .page-404-full-page .page-404 {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    height: auto;
+  }
+
+
+/* 500 - Erro Interno no Servidor */
+.page-500 {
+  text-align: center; }
+
+  .page-500 .details .title {
+    color: #dedede; }
+
+  .page-500 .details p {
+    font-size: 18px;
+    color: #dedede;
+  }
+
+  .page-500 .number {
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 200px;
+    color: #dedede;
+    opacity: .2;
+    line-height: .9;
+    letter-spacing: -8px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.7); }
+
+.page-500-full-page {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #009688;
+  overflow-x: hidden; }
+
+  .page-500-full-page .details {
+    padding-top: 0px;
+    padding-left: 25px;  
+    color: #dedede;
+    text-align: center;
+    display: inline-block; }
+
+  .page-500-full-page .page-500 {
+    margin-top: 100px; }
+
+
+/* 403 - Acesso Negado */
+.page-403 {
+  text-align: center; }
+
+  .page-403 .details .title {
+    color: #dedede; }
+
+  .page-403 .details p {
+      color: #dedede; }
+
+  .page-403 .number {
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 200px;
+    color: #dedede;
+    opacity: .2;
+    line-height: .9;
+    letter-spacing: -8px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.7); }
+
+  .page-403 .details {
+    padding-top: 0px;
+    padding-left: 25px;  
+    color: #5c6873;
+    text-align: center;
+    display: inline-block; }
+
+.page-403-full-page {  
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #009688;
+  overflow-x: hidden; }
+
+  .page-403-full-page .details input {
+    background-color: #ffffff; }
+
+  .page-403-full-page .page-403 {
+    margin-top: 100px; }
+
+
+@media (max-width: 480px) {
+  .page-404 .number,
+  .page-500 .number,
+  .page-404 .details,
+  .page-500 .details {
+    text-align: center;
+    margin-left: 0px; }
+  .page-404-full-page .page-404 {
+    margin-top: 30px; }
+  .page-404-3 .error-404 {
+    text-align: left;
+    padding-top: 10px; }
+  .page-404-3 .page-inner img {
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed; } }
+
+
+.button-area {
+  margin: 40px 0;
+}
+
+  .button-area a {
+    font-size: 15px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25) !important;
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25) !important;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25) !important;
+  }

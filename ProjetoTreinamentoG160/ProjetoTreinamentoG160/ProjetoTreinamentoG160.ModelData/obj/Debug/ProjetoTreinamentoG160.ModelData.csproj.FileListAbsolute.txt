@@ -1,0 +1,12 @@
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\ProjetoTreinamentoG160.ModelData.dll.config
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\ProjetoTreinamentoG160.ModelData.dll
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\ProjetoTreinamentoG160.ModelData.pdb
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\EntityFramework.dll
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\EntityFramework.xml
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\obj\Debug\ProjetoTreinamentoG160.ModelData.csproj.AssemblyReference.cache
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\obj\Debug\ProjetoTreinamentoG160.ModelData.csproj.CoreCompileInputs.cache
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\obj\Debug\ProjetoTreinamentoG160.ModelData.csproj.CopyComplete
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\obj\Debug\ProjetoTreinamentoG160.ModelData.dll
+C:\Users\theot\source\repos\ProjetoTreinamentoG160\ProjetoTreinamentoG160\ProjetoTreinamentoG160.ModelData\obj\Debug\ProjetoTreinamentoG160.ModelData.pdb

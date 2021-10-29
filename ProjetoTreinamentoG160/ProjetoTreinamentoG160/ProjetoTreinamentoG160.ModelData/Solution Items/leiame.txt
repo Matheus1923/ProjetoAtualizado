@@ -1,0 +1,67 @@
+﻿Modelo ModeData
+
+Exemplo dos diretórios [ obs: os Diretórios tem que estar nessa ordem - o restante o t4 gera automático ] 
+
+Logic 
+   Northwind
+      Model
+         
+apos o modelo solicitado pronto 
+--------------------------------------------------------------------------------------
+adicionar o edmx dentro da [ Model ]
+
+na Applicação escolha Add... New item. [ Visual C# Items - Data ]
+									   [ Escolha a opção ADO.NET Entity Data Model ]
+
+
+Framework 6
+
+Nome: Northwind
+
+usar [EF Designer from database]
+
+[x] Save connection settings in App.Config as:    
+
+NorthwindEntities
+--------------------------------------------------------------------------------------
+
+[x] Tables
+[ ] views - caso for utilizar
+[x] stored procedures and functions
+
+--------------------------------------------------------------------------------------
+[ ] Pluralize or singularize generated object names
+[x] Include Foreign key columns in the model
+[x] Import selected stored procedures and functions into the entity model
+
+Namespace = NorthwindModel
+--------------------------------------------------------------------------------------
+Apos salvar o edmx
+
+Excluir o Arquivo Nortwind.tt 
+
+Localizar o Diretorio [ CodeTemplates ] 
+
+selecione o arquivo ModelCustom.tt
+e com Lado Direito do Mouse selecione a opção RUN CUSTOM TOOL
+
+apos rodar o arquivo ModelCustom.tt
+
+Solution Explorer - selecione show all files
+selecione todos os arquivos gerados
+e com lado direito do mouse Seleciona a Opção include in project
+repita o mesmo no MetaData
+
+apos todos os procedimentos a extrutura ficara com o seguinte aspecto
+
+Logic 
+   Northwind
+      MetaData
+      Model
+
+
+
+
+
+
+Observação: Caso não consiga fazer os exemplos - Solução Rio de Janeiro vaga pra policial mesmo heheheheheehehehe
